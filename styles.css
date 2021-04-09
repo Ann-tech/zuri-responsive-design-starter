@@ -11,7 +11,7 @@ div.nav-bar {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
-    width: 100vw;
+    width: 100%;
     background: #304353;
 }
 
@@ -25,6 +25,11 @@ ul.nav-links {
     margin: 0;
     padding: 0;
 }
+
+.nav-links > button {
+    display: none;
+}
+
 
 ul li {
     margin: 0 2vw;
@@ -344,4 +349,155 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media screen and (max-width: 1380px) {
+    div.hero-background-pos {
+       left: 70%;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    div.hero-background-pos {
+       left: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.logo {
+        font-size: 1.3rem;
+        color: #bcc3c7;
+        align-self: flex-start;
+    }
+
+    div.nav-bar {
+        padding: 1rem 4rem;
+    }
+
+
+    ul.nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 96px;
+    }
+
+    .nav-links > button {
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        border: none;
+        display: block;
+    }
+    
+    .nav-links > button:hover {
+        background-color: #fdfeff;
+    }
+    
+    .nav-links > button:focus {
+        outline: none;
+    }
+    
+    
+    #ham-icon {
+        margin: 5px 2vw 10px 2vw;
+    }
+    
+
+    .show-nav {
+        display: block;
+    }
+
+
+    ul li {
+        font-size: 1rem;
+        display: none;
+    }
+
+    ul li a:hover {
+        color: #304353;
+        background: #fff;
+        padding: 0;
+    }
+
+ 
+    div.snapshot-box-content {
+        flex-direction: column;
+    }
+
+    div.hero-section {
+        padding: 4rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.hero-background {
+        min-height: 220px;
+        padding: 4rem;
+    }
+
+    div.background {
+        width: 100%;
+        height: 100%;
+    }
+
+    div.hero-content-heading p {
+        font-size: 0.8rem;
+    }
+
+    div.footer {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    div.nav-bar {
+        padding: 1rem;
+    }
+
+
+    div.hero-background {
+        padding: 2rem;
+    }
+
+    div.hero-section {
+        padding: 2rem;
+    }
+
+
+    div.footer {
+        padding: 1rem;
+    }
+
+    div.footer-input > input {
+        width: 30%;
+    }
+
+    textarea {
+        width: 61%;
+    }
+
+
+}
+
+@media screen and (max-width: 360px) {
+    ul.nav-links {
+        align-items: center;
+    }
+
+    div.hero-background {
+        padding: 1rem;
+    }
+    div.hero-section {
+        padding: 1rem;
+    }
+
+    div.footer-input > input {
+        width: 40%;
+    }
+
+    textarea {
+        width: 81%;
+    }
 }
