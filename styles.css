@@ -388,9 +388,6 @@ div.footer h6 {
         display: block;
     }
     
-    .nav-links > button:hover {
-        background-color: #fdfeff;
-    }
     
     .nav-links > button:focus {
         outline: none;
@@ -483,7 +480,7 @@ div.footer h6 {
 
 @media screen and (max-width: 360px) {
     ul.nav-links {
-        align-items: center;
+        align-items: flex-end;
     }
 
     div.hero-background {
